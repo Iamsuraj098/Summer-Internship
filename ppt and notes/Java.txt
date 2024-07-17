@@ -1,0 +1,18 @@
+Java 8 - means java version 1.8
+Java 7 - means java version 1.7
+
+JDK - Java development kit
+JVM - java virtual machine
+JRE - Java Runtime Environment
+
+To level of Compilation: 	
+	1) Source code to Byte Code: Compiler work here, .java file to .class
+	2) Byte Code to Native Code: Interpreter work here, .class file to .exe
+
+Java is platform independent
+JVM is platform dependent
+
+JavaSE: Java Standard Edition
+java.lang.* its by default installed.
+
+JDBC Architecture: 

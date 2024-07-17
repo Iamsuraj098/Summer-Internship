@@ -1,0 +1,18 @@
+package Practice;
+import java.sql.*;
+public class Hello {
+	public static void main(String[] args) {
+//		System.out.println("Hello World");
+		Connection conn = null;
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			conn = DriverManager.getConnection("jdbc://localhost:3306/student", "root", "");
+			String query = "Select * from student";
+			PreparedStatement pre = conn.prepareStatement(query);
+			System.out.println(pre);
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println(e.getMessage());
+		}
+	}
+}
