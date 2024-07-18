@@ -1,4 +1,6 @@
 Package Creation: com.<project_name>.<package_name>
 After this by applying dot(.) we save package in different location.
-Static Block: 
-Instance Block: 
+Static Block:
+	Syntax: static{ }
+	Automatically start in initial of code execution. Before starting the code execution if we want to preSet some values then we use the static block.
+Instance Block: { }

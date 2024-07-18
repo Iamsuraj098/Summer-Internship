@@ -5,13 +5,15 @@ public class Hello {
 //		System.out.println("Hello World");
 		Connection conn = null;
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/student", "root", "");
 			String query = "Select * from customer";
-			Statement smt = conn.createStatement();			
+			Statement smt = conn.createStatement();
 			ResultSet result = smt.executeQuery(query);
+			System.out.println("ID      Name         Age");
+			System.out.println("...     ....         ..."); 
 			while(result.next()) {
-				System.out.println("Name:"+ result.getString("name") + " " + result.getInt("age"));
+				System.out.println(result.getInt("cust_id")+"    " + result.getString("name") + "      " + result.getInt("age"));
 			}
 		} catch (Exception e) {
 			// TODO: handle exception
@@ -19,3 +21,6 @@ public class Hello {
 		}
 	}
 }
+
+
+
