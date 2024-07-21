@@ -2,5 +2,44 @@ Package Creation: com.<project_name>.<package_name>
 After this by applying dot(.) we save package in different location.
 Static Block:
 	Syntax: static{ }
-	Automatically start in initial of code execution. Before starting the code execution if we want to preSet some values then we use the static block.
+	Automatically start in initial of code execution. Before starting the code execution if we want to preSet some values then we 	use the static block.
 Instance Block: { }
+
+javaC used to convert the source code to byte code while CAVAJ used to convert the byte code into source code.
+At class level only two access specifier : 1) public 2) Default(we not default).
+At method level only four access specifier : 1) public 2) protected 3) private 4) default.
+
+By default in java reference is passed not value.
+
+Enhanced for loop
+
+Another name of While loop is Entry control Loop.
+Another name of Do-While loop is End Control Loop.
+
+Three type of variable: local, static and non-static (instance).
+
+this - always represent the current instance.
+Methods are two types: static and non-static.
+class ke bhar funtion and class ander method.
+
+C language is structured and procedural programming language.
+Encapsulation - wrapping of state and behaviour in a class/entity.
+
+Inheritance type: a) Containment ("has a" relationship) 
+				  b) Classical ("is a" relationship)
+
+Inheritance - reuse_ability
+Polymorphism - one name multiple use.
+
+Compile time polymorphism: 
+
+
+
+
+
+
+
+
+
+
+
