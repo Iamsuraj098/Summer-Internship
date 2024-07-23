@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	Chu**ya Ho kya
+
+	<form action="show.jsp">
+		User Name:
+		<input type="text" placeholder="Enter the name" name="name">
+		<input type="submit">
+	</form>
+	
 </body>
 </html>

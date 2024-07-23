@@ -1,0 +1,15 @@
+CGI (Common Gateway Interface)
+
+Servlet -- Java -> html : Html code embedded inside the java code
+JSP -- Html -> Java : Java code embedded inside the Html code
+
+HTML also called as Tag library.
+
+JSP: it plateform independent, server-side scripting programming that enables the creation of dynamic web-application.
+
+JSP life cycle: init() service() destroy()
+
+JSP tags:
+> Scriptlet Tag
+> Expression Tag
+> Declaration Tag

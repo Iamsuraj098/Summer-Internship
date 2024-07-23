@@ -1,0 +1,170 @@
+CRC Training:
+
+Data Base Management System:
+Difference between delete, truncate, drop in MySQL.
+Delete can rollback only if auto Commit false.
+
+
+RAT: Rapid development life cycle.
+
+SQL query: 
+
+insert query syntax:
+INSERT INTO info(age, mark, name, roll_no) values (14, 45, "Shayam", 1),(15, 45, "Sanskar", 2);
+INSERT INTO info values (14, 45, "Shaya", 1), (15, 45, "Sanskar", 2);
+________________________________________________________________________________________________________________________________________________
+Select query syntax:
+SELECT * from info WHERE 1;
+SELECT age, mark from info;
+
+Aliasing: here 'as' to change the rename the column. It mostly used in Join.
+SELECT age as 'Umar', mark as 'Gain marks' FROM info;  -> used to change column name.
+SELECT age as 'Umar', i.mark as 'Gain marks' FROM info as i; 
+
+By using the back tick , single quote and double quote we can bind a more then one into single word.
+
+Before this we prefer the column, if we want to prefer the "row" then used the "where clause".
+
+"Where Clause"
+SELECT * from info where age = 14;
+SELECT * from info where name = 'Sanskar';
+SELECT * from info where mark > 30;
+SELECT * from info where age = 15 and name = 'Sanskar';
+
+"Change the specific value of column using WHERE Clause and SET"
+UPDATE info set age = 17 where name = 'Sanskar';
+
+______________________________________________________________________________________________________________________________________________
+DELETE:
+
+DELETE from info where name='Sagar';
+______________________________________________________________________________________________________________________________________________
+
+Join: Join used to combined the row of two or more tables based on related columns between them.
+Type of Join: 	a) Inner Join 	b) Outer Join
+a) Inner Join: Only show matched data. Equi Join and Natural Join
+   Equi Join:
+	   Ex: 
+		1. SELECT customer.cust_id, customer.name, order_tb.order_id, order_tb.price from customer, order_tb where customer.cust_id = 			   order_tb.cust_id;
+		2. SELECT c.cust_id, c.name, o.order_id, o.price from customer as c, order_tb as o where c.cust_id = o.cust_id;
+		3. SELECT c.cust_id, c.name, o.order_id, o.price from customer as c JOIN order_tb as o ON c.cust_id = o.cust_id;
+   Natural Join:
+	  Ex: 
+		1. SELECT * from customer NATURAL JOIN order_tb;
+
+b) Outer Join: Left Join, Right Join, Full Outer Join.
+	Outer Join is type of join that retrieve matching as well as non-matching record from related tables.
+	a) Left Join:
+		SELECT c.cust_id, c.name, o.order_id, o.price from customer as c LEFT JOIN order_tb as o ON c.cust_id = o.cust_id.
+	b) Right Join:
+		SELECT c.cust_id, c.name, o.order_id, o.price from customer as c RIGHT JOIN order_tb as o ON c.cust_id = o.cust_id;
+	c) Full Join:
+		SELECT c.cust_id, c.name, o.order_id, o.price from customer as c LEFT JOIN order_tb as o ON c.cust_id = o.cust_id UNION SELECT 			c.cust_id, c.name, o.order_id, o.price from customer as c RIGHT JOIN order_tb as o ON c.cust_id = o.cust_id;
+_____________________________________________________________________________________________________________________________________________
+Cross Join:
+	Similar to Cross Product.
+Ex:
+	SELECT * FROM customer CROSS JOIN order_tb;
+________________________________________________________________________________________________________________________________________________
+Self Join:
+A self join is a regular that is used to join a table with itself, it basically allow us to combine the rows from the same table based on some specific condition.
+
+sign: '<>' represent "not equal to".
+________________________________________________________________________________________________________________________________________________
+stop Apache server from XAMPP
+ctrl + alt + delete
+task manager
+XAMPP - end process
+________________________________________________________________________________________________________________________________________________
+Data Model:
+Model of system in client's mind --> Entity model of client's model --> Table model of entity model --> tables on disk
+
+ER Diagram.
+________________________________________________________________________________________________________________________________________________
+PPT: 
+Objective
+Layout
+Database model
+________________________________________________________________________________________________________________________________________________
+Group Function in MySQL:
+min, avg, max, count.
+
+To count and select the distinct id : 
+SELECT COUNT(DISTINCT cust_id) from order_tb;
+
+To know property of table:
+DESCRIBE order_tb
+
+To the elements in a column between 2002 to 2010:
+SELECT COUNT(order_id) from order_tb where order_id BETWEEN 2002 and 2010;
+
+All function in a same query: these max, min, avg, count all are itself a function thats why parenthesis attached with keyword.
+SELECT MAX(price), MIN(price), AVG(price), COUNT(price), SUM(price) from order_tb where order_id BETWEEN 2002 and 2010;
+
+To print data "BETWEEN" specific range:
+SELECT * from order_tb where order_id BETWEEN 2002 and 2010;
+
+Using "IN" condition: "IN" not a function.
+SELECT * from order_tb where order_id IN (2001,2002,2003);
+________________________________________________________________________________________________________________________________________________
+LIKE Condition:
+
+% denote zero or more.
+_ denote only one.
+
+all name which start with 's' letter:
+SELECT * from info where name LIKE 's%'; 
+
+all name which have second position with 'h' letter:
+SELECT * from info where name LIKE '_h%';
+________________________________________________________________________________________________________________________________________________
+ORDER BY Clause:
+ASC: ascending
+DESC: descending
+
+SELECT * FROM `info` ORDER BY age;
+SELECT * FROM `info` ORDER BY age desc;
+SELECT * FROM `info` ORDER BY age desc, name asc;
+________________________________________________________________________________________________________________________________________________
+GROUP BY clause:
+COUNT(), MIN(), MAX(), SUM(), AYG()
+
+SELECT name, MAX(mark) from info GROUP BY age;
+From this query we get the all names which has maximum marks in each age.
+
+HAVING clause we can restrict group result:
+
+
+Syntax: SELECT <column name> FROM <Table name> [WHERE] [GROPU BY] [HAVING] [ORDER BY]
+________________________________________________________________________________________________________________________________________________
+VIEW:
+by using "VIEW" we can restrict the user from get access of whole database.
+A view is a logical table based on a table or a another view.
+Advantage of View:
+1. To restrict data access.
+2. To complex query easy.
+3. TO provide data independence
+4. To present different views of data.
+
+CREATE or REPLACE view shortcut as SELECT name, age from info where roll_no = 2;
+SELECT name, age  from shortcut;
+
+CREATE or REPLACE VIEW shortcut(id, name, age) AS 
+SELECT roll_no, name, age from info where roll_no = 1;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
