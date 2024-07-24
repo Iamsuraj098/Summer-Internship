@@ -10,6 +10,18 @@ JSP: it plateform independent, server-side scripting programming that enables th
 JSP life cycle: init() service() destroy()
 
 JSP tags:
-> Scriptlet Tag
-> Expression Tag
-> Declaration Tag
+> Scriptlet Tag: it used to execute the java source code. Here we can only declare the variables not method. It declare inside service() method
+> Expression Tag: Mainly used to print the value of variable, method
+> Declaration Tag: Used to declare field and method. It declare outside service() method.
+
+JSP Built in Object:
+All these implicit object are created inside Web Container.
+1. out
+2. request
+3. response
+4. config (setting done in XML files)
+5. Application (setting done in XML files)
+6. Session (session is an implicit object of type HttpSession)
+7. pageContext 
+8. page
+9.

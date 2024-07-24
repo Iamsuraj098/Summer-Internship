@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-	HELLO WORLD
+	<form action="checkLogin.jsp">
+		Enter the name: <br>
+		<input type="text" name="username">
+		<br>Enter the pass: <br>
+		<input type="text" name="password">
+		<input type="submit">
+	</form>
 </body>
 </html>

@@ -7,6 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	HELLO WORLD
+	<form action="./Display_config">
+		<input type="text" name="fname">
+		<input type="submit">
+	</form>
 </body>
 </html>
