@@ -1,3 +1,7 @@
 .makeup:hover{
 background-color: rgb(159, 159, 159);
 }
+.makeup2:hover{
+    border-color: black;
+    cursor: pointer;
+}

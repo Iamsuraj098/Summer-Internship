@@ -25,3 +25,26 @@ All these implicit object are created inside Web Container.
 7. pageContext 
 8. page
 9.
+
+JSP Directive Element:
+
+a) page directive : import, contentType, extends, info, buffer, language, isELIgnored, autoFLush, session, pageEncoding, errorPage, isErrorPage.
+b) include directive : <%@ include file="menu.jsp" %>
+c) taglib directive : 
+
+
+JSP Action tags: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
