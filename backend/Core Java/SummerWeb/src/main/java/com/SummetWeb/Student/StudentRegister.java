@@ -18,9 +18,13 @@ public class StudentRegister extends HttpServlet {
 		Connection conn = null;
 		Statement stmt = null;
 		try {
-
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/student", "root", "");
+		}catch(ClassNotFoundException e){
+			out.println(e.getMessage());
+			out.println(e.getStackTrace());
+		}
+		try {
+			conn = DriverManager.getConnection("jdbc:mysql://127.0.0.1:3306/student", "root", "");
 
 			int id = Integer.parseInt(request.getParameter("sid"));
 			String name = request.getParameter("name");
