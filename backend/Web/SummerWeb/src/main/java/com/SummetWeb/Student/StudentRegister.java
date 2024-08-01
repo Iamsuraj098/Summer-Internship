@@ -12,10 +12,6 @@ import java.sql.*;
 
 @WebServlet("/Registration/register")
 public class StudentRegister extends HttpServlet {
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -24,7 +20,7 @@ public class StudentRegister extends HttpServlet {
 		Statement stmt = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-		}catch(ClassNotFoundException e){
+		} catch (ClassNotFoundException e) {
 			out.println(e.getMessage());
 			out.println(e.getStackTrace());
 		}
@@ -41,14 +37,14 @@ public class StudentRegister extends HttpServlet {
 			stmt = conn.createStatement();
 			int row = stmt.executeUpdate(query);
 			RequestDispatcher rd = request.getRequestDispatcher("registration.jsp");
-			if(row> 0) {
+			if (row > 0) {
 				request.setAttribute("status", "success");
-			}else {
-				request.setAttribute("status", "fail");
+			} else {
+				request.setAttribute("status", "fails");
 			}
 			rd.forward(request, response);
 		} catch (Exception e) {
-			out.print(e.getMessage());
+			e.printStackTrace();
 		}
 	}
 }

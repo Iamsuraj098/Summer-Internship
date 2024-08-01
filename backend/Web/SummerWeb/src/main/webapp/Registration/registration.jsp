@@ -32,17 +32,17 @@
 					<label class="form-label">Student City</label> <input type="text"
 						class="form-control" name="city">
 				</div>
-				<button type="submit" class="btn btn-primary">Submit</button>
+				<button type="Submit">Submit</button>
 			</form>
 		</div>
 	</div>
-
+	
 	<input type="hidden" id="status" value=<%=request.getAttribute("status")%>>
 <script type="text/javascript">
 	if (status.value == "success") {
-		alert("Successfully added");
-	}else{
-		alert("Not Added");
+		alert("Success");
+	} if else(status.value == "fails"){
+		alert("fails");
 	}
 </script>
 </body>
