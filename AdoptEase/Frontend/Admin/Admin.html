@@ -18,17 +18,13 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary m-0 p-0">
         <div class="nav nav-tabs pt-1 w-100 bg-dark-subtle text-dark-emphasis" id="nav-tab" role="tablist">
-            <a class="nav navbar-brand text-center" href="#">Navbar</a>
+            <a class="nav navbar-brand text-center" href="#">AdoptEase</a>
             <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
                 type="button" role="tab" aria-controls="nav-home" aria-selected="true">Pet</button>
             <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
                 type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Care</button>
             <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact"
                 type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Product</button>
-            <button class="nav-link" id="nav-user-tab" data-bs-toggle="tab" data-bs-target="#nav-user"
-                type="button" role="tab" aria-controls="nav-user" aria-selected="false">Users</button>
-            <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled"
-                type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Admin</button>
         </div>
     </nav>
 
@@ -262,6 +258,11 @@
                                 placeholder="Enter Product's name" aria-label=".form-control-sm example">
                         </div>
                         <div class="form-group">
+                            <label for="name">Details</label>
+                            <input class="form-control form-control-sm" type="text" id="details"
+                                placeholder="Enter Product's details" aria-label=".form-control-sm example">
+                        </div>
+                        <div class="form-group">
                             <label for="gender">Type</label>
                             <select class="form-control form-control-sm" id="gender">
                                 <option>Select</option>
@@ -333,13 +334,6 @@
         </div>
     </div>
 
-
-    <div class="tab-pane fade" id="nav-user" role="tabpanel" aria-labelledby="nav-user-tab" tabindex="0">
-        D
-    </div>
-    <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
-        Hello
-    </div>
 </body>
 
 </html>
