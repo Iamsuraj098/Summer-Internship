@@ -4,13 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Hello World</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>Hello World</h1>
-	<form action="upload">
-		
-		<button type="submit">Upload</button>
-	</form>
+
 </body>
 </html>

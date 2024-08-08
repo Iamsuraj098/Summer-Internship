@@ -4,13 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Hello World</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<h1>Hello World</h1>
-	<form action="upload">
-		
-		<button type="submit">Upload</button>
-	</form>
+  
+  <%@ include file="menu.html" %>
+  <h2>Hello here in index in Summer New 29</h2>
 </body>
 </html>

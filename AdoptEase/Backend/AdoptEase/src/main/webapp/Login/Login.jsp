@@ -37,12 +37,12 @@
 				class="col-sm-8 d-flex justify-content-center align-items-center rounded">
 				<div class="border rounded rounded-5 w-75"
 					style="background-color: rgb(179, 179, 179);">
-					<form class="p-4" style="width: 100%;" action="Login" method="Post">
+					<form class="p-4" style="width: 100%;" method="Post" id="Login">
 						<div class="row mb-3 d-flex flex-column">
-							<label for="gender" class="col-sm-2 col-form-label fs-4">Gender</label>
+							<label for="gender" class="col-sm-2 col-form-label fs-4">Role</label>
 							<div class="col-sm-10">
-							<select class="form-control form-control-sm fs-4 w-100"
-								id="gender" required>
+							<select class="form-control form-control-sm fs-4 w-100" name="role"
+								id="role" required>
 								<option class="form-control form-control-sm fs-4">Select</option>
 								<option class="form-control form-control-sm fs-4">Admin</option>
 								<option class="form-control form-control-sm fs-4">User</option>
@@ -53,26 +53,33 @@
 							<label for="inputEmail3" class="col-sm-2 col-form-label fs-4">Email</label>
 							<div class="col-sm-10">
 								<input type="email" class="form-control form-control-sm fs-4"
-									id="inputEmail3" required>
+									id="inputEmail3" name="email" required>
 							</div>
 						</div>
 						<div class="row mb-3 d-flex flex-column">
 							<label for="inputPassword3" class="col-sm-2 col-form-label fs-4">Password</label>
 							<div class="col-sm-10">
 								<input type="password" class="form-control fs-4"
-									id="inputPassword3" required>
+									id="inputPassword3" name="password" required>
 							</div>
 						</div>
-						<button type="submit" class="btn btn-primary btn-center fs-4">Login</button>
+						<button type="submit" class="btn btn-primary btn-center fs-4" onclick="check()">Login</button>
 						<div class="d-flex justify-content-end w-75">
 							<p class="fs-7">Don't have account?</p>
-							<a href="#" class="fs-7">Create Account</a>
+							<a href="http://localhost:8080/AdoptEase/Registration/Registration.jsp" class="fs-7">Create Account</a>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</div>
+	<script>
+		function check(){
+			var x = document.getElementById("role").value;
+			if(x == "Select" || x == "") alert("Please select a role");
+			else document.getElementById("Login").action = "login";
+		}
+	</script>
 </body>
 
 </html>

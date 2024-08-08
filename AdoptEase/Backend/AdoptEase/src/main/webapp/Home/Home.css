@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.makeup:hover{
+    background-color: rgb(0, 40, 202);
+    color: white;
+    border-radius: 10px;
+}

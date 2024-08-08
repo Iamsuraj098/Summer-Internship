@@ -16,39 +16,27 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<div class="container-fluid bg-info w-75">
-		<h1 class="text-center">Registration Page</h1>
+	<div class="container-fluid bg-danger w-75">
+		<h1 class="text-center">Login Page</h1>
 		<div class="row">
 			<form action="register" method="post">
 				<div class="mb-3">
-					<label class="form-label">Student Id</label> <input type="text"
+					<label class="form-label">User Name</label> <input type="text"
 						class="form-control" name="sid">
 				</div>
 				<div class="mb-3">
-					<label class="form-label">Student Name</label> <input type="text"
-						class="form-control" name="name">
+					<label class="form-label">Image</label>			
+					<input type="file" class="form-control" placeholder="Enter the image">
+					
 				</div>
 				<div class="mb-3">
-					<label class="form-label">Student City</label> <input type="text"
-						class="form-control" name="city">
+					<label class="form-label">Password</label> <input type="text"
+						class="form-control" name="name">
 				</div>
-				<button type="Submit">Submit</button>
+				<button type="Submit" class="btn btn-secondary">Login</button>
 			</form>
 		</div>
 	</div>
-	
-	<%
-		out.print("<script> alert('Regsitration success fully done'); "+ "window.open('home.jsp')"+ "</script>");
-	%>
-	
-	<input type="hidden" id="status" value=<%=request.getAttribute("status")%>>
-<script type="text/javascript">
-	if (status.value == "success") {
-		alert("Success");
-	} if else(status.value == "fails"){
-		alert("fails");
-	}
-</script>
 </body>
 </html>
 
