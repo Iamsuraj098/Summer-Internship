@@ -27,10 +27,10 @@
       <div class="collapse navbar-collapse d-md-flex justify-content-md-end gap-50" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active makeup" aria-current="page" href="http://localhost:8080/AdoptEase/Login/Login.jsp">Login</a>
+            <a class="nav-link active makeup" aria-current="page" href="http://localhost:8081/AdoptEase/Login/Login.jsp">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active makeup" href="http://localhost:8080/AdoptEase/Registration/Registration.jsp">Registration</a>
+            <a class="nav-link active makeup" href="http://localhost:8081/AdoptEase/Registration/Registration.jsp">Registration</a>
           </li>
         </ul>
       </div>
@@ -63,7 +63,7 @@
       <div class="card-body text-center fs-4">
         <p class="card-title fw-bolder">Welcome to Your Forever Friend, Adopt and Care for Pets Today!</p>
         <p class="card-text">Find Love, Give Love: Adopt a Pet Today!</p>
-        <a href="http://localhost:8080/AdoptEase/Registration/Registration.jsp" class="btn btn-primary fs-4">Adopt Now</a>
+        <a href="http://localhost:8081/AdoptEase/Registration/Registration.jsp" class="btn btn-primary fs-4">Adopt Now</a>
       </div>
     </div>
   </div>

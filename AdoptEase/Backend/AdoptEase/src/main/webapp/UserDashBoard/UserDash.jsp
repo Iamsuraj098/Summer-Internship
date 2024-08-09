@@ -1,6 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@ page session="true" %>
+<%
+    // Check if the session is new or if the user attribute is not present
+    HttpSession session2 = request.getSession(false); // Use false to avoid creating a new session
+    if (session2 == null || session2.getAttribute("User") == null) {
+        response.sendRedirect("http://localhost:8081/AdoptEase/Registration/Registration.jsp");
+        return; // Stop further execution
+    }
+%>
 <!DOCTYPE html>
 <html lang="en">
 

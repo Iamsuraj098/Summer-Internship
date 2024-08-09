@@ -37,14 +37,12 @@ public class ControllerLogin extends HttpServlet {
 		try {
 			boolean result = check.verify(client);
 			if(result) {
+				HttpSession session = request.getSession(); 
+				session.setAttribute("User", email);
 				if(role.equals("User")) {
-					HttpSession session = request.getSession(); 
-					session.setAttribute("email", email);
-			        response.sendRedirect("http://localhost:8080/AdoptEase/UserDashBoard/UserDash.jsp");
+			        response.sendRedirect("http://localhost:8081/AdoptEase/UserDashBoard/UserDash.jsp");
 				}else {
-					HttpSession session = request.getSession(); 
-					session.setAttribute("email", email);
-			        response.sendRedirect("http://localhost:8080/AdoptEase/Admin/Admin.jsp");
+			        response.sendRedirect("http://localhost:8081/AdoptEase/Admin/Admin.jsp");
 				} 
 			}else {
 				RequestDispatcher rd = request.getRequestDispatcher("/Registration/Registration.jsp");

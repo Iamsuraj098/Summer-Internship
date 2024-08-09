@@ -66,7 +66,7 @@
 						<button type="submit" class="btn btn-primary btn-center fs-4" onclick="check()">Login</button>
 						<div class="d-flex justify-content-end w-75">
 							<p class="fs-7">Don't have account?</p>
-							<a href="http://localhost:8080/AdoptEase/Registration/Registration.jsp" class="fs-7">Create Account</a>
+							<a href="http://localhost:8081/AdoptEase/Registration/Registration.jsp" class="fs-7">Create Account</a>
 						</div>
 					</form>
 				</div>
