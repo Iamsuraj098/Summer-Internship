@@ -19,21 +19,21 @@
 <body>
 	<div class="container-fluid p-2 border-bottom w-100">
 		<header class="d-flex flex-wrap justify-content-around">
-			<a href="http://localhost:8080/AdoptEase/Admin/Admin.jsp"
+			<a href="http://localhost:8081/AdoptEase/Admin/Admin.jsp"
 				class="d-flex align-items-center me-md-auto text-dark text-decoration-none">
 				<span class="fs-3">AdoptEase</span>
 			</a>
 			<ul class="nav nav-pills">
 				<li class="nav-item fs-4"><a
-					href="http://localhost:8080/AdoptEase/Admin/pet/pet.jsp"
+					href="http://localhost:8081/AdoptEase/Admin/pet/pet.jsp"
 					class="nav-link makeup" aria-current="page">Pet</a></li>
 				<li class="nav-item fs-4"><a
-					href="http://localhost:8080/AdoptEase/Admin/care/care.jsp"
+					href="http://localhost:8081/AdoptEase/Admin/care/care.jsp"
 					class="nav-link makeup">Care</a></li>
 				<li class="nav-item fs-4"><a
-					href="http://localhost:8080/AdoptEase/Admin/product/product.jsp"
+					href="http://localhost:8081/AdoptEase/Admin/product/product.jsp"
 					class="nav-link makeup">Product</a></li>
-				<li class="nav-item fs-4"><a href="#" class="nav-link makeup">Account</a></li>
+				<li class="nav-item fs-4"><a href="http://localhost:8081/AdoptEase/Admin/Account/Account.jsp" class="nav-link makeup">Account</a></li>
 			</ul>
 		</header>
 	</div>

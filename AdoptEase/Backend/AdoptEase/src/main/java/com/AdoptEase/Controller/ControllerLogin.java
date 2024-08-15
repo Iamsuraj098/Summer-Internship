@@ -11,6 +11,7 @@ import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import com.AdoptEase.Model.*;
 
@@ -23,6 +24,7 @@ public class ControllerLogin extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		PrintWriter out = response.getWriter();
+		HttpSession session = request.getSession(); 
 		
 		LoginDao client = new LoginDao();
 		String email = request.getParameter("email");
@@ -37,11 +39,15 @@ public class ControllerLogin extends HttpServlet {
 		try {
 			boolean result = check.verify(client);
 			if(result) {
-				HttpSession session = request.getSession(); 
-				session.setAttribute("User", email);
 				if(role.equals("User")) {
+					ArrayList<String> details = check.AdminData(email); 
+					session.setAttribute("User", email);
+					session.setAttribute("details", details);
 			        response.sendRedirect("http://localhost:8081/AdoptEase/UserDashBoard/UserDash.jsp");
 				}else {
+					ArrayList<String> details = check.UserData(email); 
+					session.setAttribute("Admin", email);
+					session.setAttribute("details", details);
 			        response.sendRedirect("http://localhost:8081/AdoptEase/Admin/Admin.jsp");
 				} 
 			}else {

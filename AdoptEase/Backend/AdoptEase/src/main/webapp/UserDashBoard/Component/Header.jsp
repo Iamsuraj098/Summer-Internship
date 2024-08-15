@@ -29,7 +29,8 @@
 					class="nav-link makeup" aria-current="page">Adopt</a></li>
 				<li class="nav-item fs-4"><a
 					href="http://localhost:8081/AdoptEase/UserDashBoard/Care/care.jsp"
-					class="nav-link makeup">Care</a></li>
+					class="nav-link makeup" aria-current="page">Care</a></li>
+
 				<li class="nav-item fs-4"><a
 					href="http://localhost:8081/AdoptEase/UserDashBoard/Product/product.jsp"
 					class="nav-link makeup">Product</a></li>

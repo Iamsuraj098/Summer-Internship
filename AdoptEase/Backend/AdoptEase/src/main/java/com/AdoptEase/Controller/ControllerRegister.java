@@ -6,8 +6,11 @@ import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
+
 import java.io.IOException;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 import com.AdoptEase.Model.Registration.RegistrationDao;
 import com.AdoptEase.Model.Registration.RegistrationJdbc;
@@ -37,16 +40,20 @@ public class ControllerRegister extends HttpServlet {
 		client.setRole(role);
 
 		RegistrationJdbc register = new RegistrationJdbc();
-
+		HttpSession session = request.getSession(); 
 		try { 
 			boolean result = register.add(client);
 			if (result) {
 				if (role.equals("User")) {
-					RequestDispatcher rd = request.getRequestDispatcher("/UserDashBoard/UserDash.jsp");
-					rd.forward(request, response); 
+					ArrayList<String> details = register.AdminData(email); 
+					session.setAttribute("User", email);
+					session.setAttribute("details", details);
+			        response.sendRedirect("http://localhost:8081/AdoptEase/UserDashBoard/UserDash.jsp");
 				} else {
-					RequestDispatcher rd = request.getRequestDispatcher("/Admin/Admin.jsp");
-					rd.forward(request, response);
+					ArrayList<String> details = register.AdminData(email); 
+					session.setAttribute("User", email);
+					session.setAttribute("details", details);
+			        response.sendRedirect("http://localhost:8081/AdoptEase/Admin/Admin.jsp");
 				}
 			} else { 
 				RequestDispatcher rd = request.getRequestDispatcher("/Registration/Registration.jsp");

@@ -71,144 +71,184 @@
   <!-- Mid-2 -->
   <div class="container-fluid text-center">
     <div class="row row-cols-1">
-      <div class="col">
-        <div class="card mb-3" style="width: 100%;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="img-fluid rounded-start" alt="...">
+        <div class="col">
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-fluid rounded-start" alt="Adopted dog with owner">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Happy Adoption Story: Max's New Home</h5>
+                            <p class="card-text">Max, a playful and energetic Labrador Retriever, found his forever home with the Johnson family. 
+                            After spending months in the shelter, Max is now enjoying daily walks, playing fetch, and lots of belly rubs. 
+                            His adoption has brought joy and companionship to the Johnsons, who were looking for a loyal friend.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-              <div class="card-body text-start">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="col">
-        <div class="card mb-3" style="width: 100%;">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img
-                src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                class="img-fluid rounded-start" alt="...">
+        <div class="col">
+            <div class="card mb-3" style="width: 100%;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            class="img-fluid rounded-start" alt="Adopted cat with family">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body text-start">
+                            <h5 class="card-title">Rescue Success: Bella's Journey to a Loving Family</h5>
+                            <p class="card-text">Bella, a shy but affectionate Siamese cat, was rescued from the streets and now lives with the Parker family. 
+                            Over time, Bella has blossomed into a confident and loving companion, bringing warmth and love to her new home. 
+                            The Parkers are thrilled to have given Bella a second chance at a happy life.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-              <div class="card-body text-start">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                  content. This content is a little bit longer.</p>
-                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
+
 
   <!-- Mid-3 -->
-  <div class="container">
+ <div class="container">
     <p class="text-center fs-4 fw-bolder">Frequently Asked Questions</p>
     <div class="accordion accordion-flush" id="accordionFlushExample">
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-            Accordion Item #1
-          </button>
-        </h2>
-        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the first item's accordion body.
-          </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    What are the steps to adopt a pet?
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    To adopt a pet, you typically need to: <br>
+                    1. Browse available pets on our website.<br>
+                    2. Submit an adoption application.<br>
+                    3. Meet the pet in person.<br>
+                    4. Complete an adoption agreement.<br>
+                    5. Pay the adoption fee.<br>
+                    6. Take your new pet home!
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-            Accordion Item #2
-          </button>
-        </h2>
-        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
-            filled with some actual content.
-          </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    What should I consider before adopting a pet?
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Before adopting a pet, consider your lifestyle, living situation, and the time and financial commitment needed to care for a pet. It's important to choose a pet that fits well with your household and daily routine.
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
-            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-            Accordion Item #3
-          </button>
-        </h2>
-        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
-            <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
-            happening here in terms of content, but just filling up the space to make it look, at least at first glance,
-            a bit more representative of how this would look in a real-world application.
-          </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    How much does it cost to adopt a pet?
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    The cost to adopt a pet varies depending on the type of animal, its age, and any additional services provided. Typically, adoption fees range from $50 to $300 and may include vaccinations, spaying/neutering, and a microchip.
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    What should I expect in the first few days after adopting a pet?
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    During the first few days, your new pet may need time to adjust to their new environment. Provide a quiet space, establish a routine, and be patient as they explore their surroundings and get to know you.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed fw-medium" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    How do I introduce my new pet to other pets in the household?
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    Introduce your new pet to existing pets gradually. Start with short, supervised meetings in a neutral space. Ensure that each pet has its own space and belongings to reduce territorial behavior.
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
+
 
   <!-- Footer -->
   <div class="container-fluid border-top">
-    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 m-2">
-      <div class="col">
-        <!-- <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      </a> -->
-        <p class="text-body-secondary">&copy; 2024</p>
-      </div>
+		<a class="navbar-brand" href="#">AdoptEase</a>
+		<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 m-2">
+			<div class="col">
+				<p class="text-body-secondary">&copy; 2024 AdoptEase</p>
+			</div>
 
-      <div class="col mb-2">
+			<div class="col mb-2"></div>
 
-      </div>
+			<div class="col mb-2">
+				<h5>Adoption Resources</h5>
+				<ul class="nav flex-column">
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Adopt a Pet</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Adoption Process</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Adoption Fees</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">FAQs</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Success Stories</a></li>
+				</ul>
+			</div>
 
-      <div class="col mb-2">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
+			<div class="col mb-3">
+				<h5>Pet Care Guides</h5>
+				<ul class="nav flex-column">
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Pet Health</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Training Tips</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Nutrition Advice</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Grooming Guides</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Pet Safety</a></li>
+				</ul>
+			</div>
 
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-
-      <div class="col mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
-        </ul>
-      </div>
-    </footer>
-  </div>
+			<div class="col mb-3">
+				<h5>About AdoptEase</h5>
+				<ul class="nav flex-column">
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Our Mission</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Our Team</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Partners</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Blog</a></li>
+					<li class="nav-item mb-1"><a href="#"
+						class="nav-link p-0 text-body-secondary">Contact Us</a></li>
+				</ul>
+			</div>
+		</footer>
+	</div>
 
 </body>
 

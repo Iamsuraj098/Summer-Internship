@@ -28,7 +28,7 @@
 						<p class="card-text">Adopt a new best friend and give a
 							forever home to a loving pet today! 🐾❤️</p>
 					</div>
-					<img src="../image/image2.png" class="card-img" alt="image">
+					<img src="../image/img.png" class="card-img" alt="image">
 					<p class="card-text m-1">God’s Love, Reflected in Every
 						Creature.</p>
 				</div>

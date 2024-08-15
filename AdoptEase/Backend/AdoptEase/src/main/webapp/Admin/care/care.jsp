@@ -1,3 +1,4 @@
+<%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -36,26 +37,38 @@
 		<div class="tab-pane active gap-20" id="doctor" role="tabpanel"
 			aria-labelledby="doctor-tab" tabindex="0">
 			<div class="container mt-2">
-				<form class="form-control form-control-sm border-dark">
+				<%
+				String msg = (String) request.getAttribute("msg");
+				if (msg != null && !msg.isEmpty()) {
+				%>
+				<div class="alert alert-info m-1" role="alert">
+					<%=msg%>
+				</div>
+				<h5 class="m-2">Add More</h5>
+				<%
+				}
+				%>
+				<form class="form-control form-control-sm border-dark" action="care"
+					method="post">
 					<div class="form-group">
-						<label for="name">Doctor Name</label> <input
-							class="form-control form-control-sm" type="text" id="name"
-							placeholder="Enter Doctor's name"
-							aria-label=".form-control-sm example">
+						<label for="name" class="fs-5">Doctor Name</label> <input
+							class="form-control form-control-sm fs-5" type="text" id="name"
+							placeholder="Enter Doctor's name" name="name"
+							aria-label=".form-control-sm example" required>
 					</div>
 					<div class="form-group">
-						<label for="breed">Qualifications</label> <input
-							class="form-control form-control-sm" type="text" id="breed"
-							placeholder="Enter Qualifications"
-							aria-label=".form-control-sm example">
+						<label for="breed" class="fs-5">Qualifications</label> <input
+							class="form-control form-control-sm fs-5" type="text" id="breed"
+							placeholder="Enter Qualifications" name="quali"
+							aria-label=".form-control-sm example" required>
 					</div>
 					<div class="form-group">
-						<label for="age">Experience</label> <input
-							class="form-control form-control-sm" type="number" id="exp"
-							placeholder="Enter Experience"
-							aria-label=".form-control-sm example">
+						<label for="age" class="fs-5">Fees</label> <input
+							class="form-control form-control-sm fs-5" type="number" id="exp"
+							placeholder="Enter Experience" name="fees"
+							aria-label=".form-control-sm example" required>
 					</div>
-					<button type="submit" class="btn btn-primary m-1">Add</button>
+					<button type="submit" class="btn btn-primary m-1 fs-5">Add</button>
 				</form>
 			</div>
 		</div>
@@ -67,6 +80,8 @@
 					<tr>
 						<th scope="col">S.No.</th>
 						<th scope="col">Doctor</th>
+						<th scope="col">Qualification</th>
+						<th scope="col">Fees</th>
 						<th scope="col">User</th>
 						<th scope="col">Timing</th>
 						<th scope="col">Address</th>
@@ -74,32 +89,38 @@
 					</tr>
 				</thead>
 				<tbody>
+					<%
+					ArrayList<ArrayList<String>> details = (ArrayList<ArrayList<String>>) request.getAttribute("details");
+					if (details != null && !details.isEmpty()) {
+						for (int i = 0; i < details.size(); i++) {
+							ArrayList<String> data = details.get(i);
+					%>
 					<tr>
-						<th scope="row">1</th>
-						<td>Mark</td>
-						<td>Otto</td>
-						<td>@mdo</td>
-						<td>@mdo</td>
-						<td>@mdo</td>
+						<th scope="row"><%=i + 1%></th>
+						<td><%=data.get(0)%></td>
+						<td><%=data.get(1)%></td>
+						<td><%=data.get(2)%></td>
+						<td><%=data.get(3)%></td>
+						<td><%=data.get(4)%></td>
+						<td><%=data.get(5)%></td>
+						<td><%=data.get(6)%></td>
 					</tr>
+					<%
+					}
+					} else {
+					%>
 					<tr>
-						<th scope="row">2</th>
-						<td>Jacob</td>
-						<td>Thornton</td>
-						<td>@fat</td>
-						<td>@fat</td>
-						<td>@fat</td>
+						<td colspan="9" class="text-center">No data available</td>
 					</tr>
-					<tr>
-						<th scope="row">3</th>
-						<td>Larry the Bird</td>
-						<td>@twitter</td>
-						<td>@twitter</td>
-						<td>@twitter</td>
-						<td>@twitter</td>
-					</tr>
+					<%
+					}
+					%>
 				</tbody>
 			</table>
+			<form action="AdminDocDetails" method="post"
+				class="d-flex flex-column align-items-center m-1">
+				<button type="submit" class="btn btn-primary">Refresh</button>
+			</form>
 		</div>
 	</div>
 </body>

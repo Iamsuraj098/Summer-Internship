@@ -11,7 +11,10 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.ArrayList;
+
 import com.AdoptEase.Model.*;
+import com.AdoptEase.Uesr.pets.petDao;
 /**
  * Servlet implementation class Jdbc
  */
@@ -43,5 +46,50 @@ public class Jdbc extends HttpServlet {
 		}
 
 		return false;
+	}
+	
+	public ArrayList<String> AdminData(String email) throws ServletException, IOException {
+		String query = "Select * from admin where email = ?";
+		try {
+			Connection con = Contectivity.getConnection();
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setString(1, email);
+			ResultSet rs = ps.executeQuery();
+			ArrayList<String> temp = new ArrayList<>();
+			while(rs.next()) {
+				temp.add(rs.getString("email"));
+				temp.add(rs.getString("name"));
+				temp.add(rs.getString("address"));
+			}
+			return temp;
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+	public ArrayList<String> UserData(String email) throws ServletException, IOException {
+		String query = "Select * from user where email = ?";
+		try {
+			Connection con = Contectivity.getConnection();
+			PreparedStatement ps = con.prepareStatement(query);
+			ps.setString(1, email);
+			ResultSet rs = ps.executeQuery();
+			ArrayList<String> temp = new ArrayList<>();
+			while(rs.next()) {
+				temp.add(rs.getString("email"));
+				temp.add(rs.getString("name"));
+				temp.add(rs.getString("address"));
+			}
+			return temp;
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 }

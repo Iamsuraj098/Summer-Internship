@@ -6,10 +6,7 @@ create table Admin(
     address varchar(100),
     password varchar(10)
 );
-
 insert into Admin(name, email, address, password) values
 ("Ram", "ram@gmail.com", "ghaziabad", "123");
-
 Select * from Admin;
-
 drop table Admin;

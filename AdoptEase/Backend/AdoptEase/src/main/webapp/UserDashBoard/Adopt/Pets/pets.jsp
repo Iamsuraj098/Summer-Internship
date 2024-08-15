@@ -28,7 +28,7 @@
         <div class="card mb-3 w-100">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="../../image/image2.png" class="img-fluid rounded-start w-75" alt="...">
+                    <img src="../../image/img.png" class="img-fluid rounded-start w-75" alt="...">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body d-flex flex-column justify-content-between h-100">
@@ -39,7 +39,6 @@
                             <p class="card-text m-0 p-0">Color: <%= i.get(8) %></p>
                             <p class="card-text m-0 p-0">Weight: <%= i.get(7) %></p>
                             <p class="card-text m-0 p-0">Price: <%= i.get(4) %></p>
-                            <p class="card-text m-0 p-0">Other Details: null</p>
                             <input type="hidden" name="selected" value='<%=i.get(0) %>' id="pet">
                         </div>
                         <div class="d-flex justify-content-end align-items-end mt-3">
